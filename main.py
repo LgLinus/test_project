@@ -11,3 +11,8 @@ print(course.total_tracks())
 
 player = Player("Linus")
 print(player.name)
+
+### TODO 
+
+## Import the Course and PlayerRepository
+## Iterate through all the Courses and Players, printing names and pars on the course if applicable
