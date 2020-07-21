@@ -1,13 +1,9 @@
-from entities.Course import Course
+
 from entities.Player import Player
+import dao.CourseRepository
+courses = dao.CourseRepository.course_repository.get_courses()
 
-course_name = input("write your course name: ")
-par = [3,3,4,3,3,4,3,3,4,3,4,3,3,4,3,4,3,4]
-course = Course(course_name,par)
-
-print(course.name)
-print(course.par)
-print(course.total_tracks())
+print(courses)
 
 player = Player("Linus")
 player2 = Player('Sebbe')

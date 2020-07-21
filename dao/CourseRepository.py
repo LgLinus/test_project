@@ -1,9 +1,7 @@
-## create CourseRepository Class
+import entities.Course
+class course_repository:
+    def get_courses ():
+        bulltofta = entities.Course.Course("bulltofta:",[3,3,3,3,3,3,4,3,3,4,3,3,3,4,3,4,3,3])
+        sibbarp = entities.Course.Course("sibbarp:",[4,5,6])
 
-## No need for __init__ function
-
-## Functions:
-## getcourses()
-## -- Return a hardcoded list of all courses  (Course("Bulltofta", [3,3,4]), Course("Sibbarp", [3,3,3])
-## 
-##
+        return (bulltofta.name,bulltofta.par),(sibbarp.name,sibbarp.par)
