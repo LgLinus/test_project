@@ -6,8 +6,7 @@ Players = dao.PlayerRepository.Player_repository.get_players()
 courses = dao.CourseRepository.course_repository.get_courses()
 print(Players)
 print(courses)
-
-
+print(Players, courses)
 ### TODO
 ## Import the Course and PlayerRepository
 ## Iterate through all the Courses and Players, printing names and pars on the course if applicable
