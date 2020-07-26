@@ -1,9 +1,7 @@
-import entities.Player
-class Player_repository:
+from entities.Player import Player
+class PlayerRepository:
     def get_players():
-        players = entities.Player.Player("Sebbe")
-        players1 = entities.Player.Player('Linus')
-        players2 = entities.Player.Player('Fredrik')
+        players = Player("Sebbe")
+        players1 = Player('Linus')
+        players2 = Player('Fredrik')
         return [players, players1, players2]
-
-

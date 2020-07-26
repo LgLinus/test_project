@@ -1,10 +1,10 @@
-from entities import ScoreCard
+from dao.CourseRepository import CourseRepository
+from dao.PlayerRepository import PlayerRepository 
 
-import dao.CourseRepository
-import dao.PlayerRepository
-players = dao.PlayerRepository.Player_repository.get_players()
-courses = dao.CourseRepository.course_repository.get_courses()
+from entities.ScoreCard import ScoreCard
 
+players = PlayerRepository.get_players()
+courses = CourseRepository.get_courses()
 
 for player in players:
     print(player)
@@ -12,14 +12,14 @@ for player in players:
 for course in courses:
     print(course)
 
-active_card = ScoreCard.Scorecard(players, courses[0])
-print(active_card.course.name, active_card.players[0].name)
-active_card.nextTurn()
+active_card = ScoreCard(players, courses[0])
 
-print(active_card.active_course)
+print("\n")
+print(active_card,"\n")
+
 active_card.nextTurn()
-print(active_card.active_course)
+active_card.nextTurn()
+print(active_card,"\n")
+
 active_card.previousTurn()
-print(active_card.active_course)
-### TODO
-## Iterate through all the Courses and Players, printing names and pars on the course if applicable
+print(active_card,"\n")
