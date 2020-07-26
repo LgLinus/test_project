@@ -3,7 +3,10 @@ from entities.Player import Player
 import dao.CourseRepository
 courses = dao.CourseRepository.course_repository.get_courses()
 
-print(courses)
+for number in courses:
+
+    print(number.name,number.par)
+
 
 player = Player("Linus")
 player2 = Player('Sebbe')
