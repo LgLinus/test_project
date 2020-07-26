@@ -5,15 +5,17 @@ import dao.PlayerRepository
 players = dao.PlayerRepository.Player_repository.get_players()
 courses = dao.CourseRepository.course_repository.get_courses()
 
+
 for player in players:
     print(player)
 
-for number in courses:
-    print(number.name,number.par)
+for course in courses:
+    print(course)
 
 active_card = ScoreCard.Scorecard(players, courses[0])
 print(active_card.course.name, active_card.players[0].name)
 active_card.nextTurn()
+
 print(active_card.active_course)
 active_card.nextTurn()
 print(active_card.active_course)
