@@ -13,7 +13,8 @@ player2 = Player('Sebbe')
 player3 = Player('Fredrik')
 print(player.name)
 
-### TODO 
+### TODO
+''
 
 ## Import the Course and PlayerRepository
 ## Iterate through all the Courses and Players, printing names and pars on the course if applicable
