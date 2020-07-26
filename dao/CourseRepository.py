@@ -5,5 +5,5 @@ class course_repository:
         sibbarp = entities.Course.Course("sibbarp:",[4,5,6])
 
 
-        return (bulltofta,sibbarp)
+        return [bulltofta,sibbarp]
 
