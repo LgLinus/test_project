@@ -6,9 +6,20 @@ class Scorecard:
         self.active_course = 0
 
     def nextTurn(self):
-        self.active_course +=1
+        if self.active_course == self.course.total_tracks():
+            print("game over")
+            return
+
+        self.active_course += 1
+
+
+
+
 
     def previousTurn(self):
+        if self.active_course == self.course.total_tracks():
+            print("game over")
+            return
         self.active_course -=1
 
 
