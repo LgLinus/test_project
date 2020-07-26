@@ -2,10 +2,9 @@ import entities.Player
 class Player_repository:
     def get_players():
         players = entities.Player.Player("Sebbe")
-        Players1 = entities.Player.Player('Linus')
-        Players2 = entities.Player.Player('Fredrik')
-        return players.name, Players1.name, Players2.name
-
+        players1 = entities.Player.Player('Linus')
+        players2 = entities.Player.Player('Fredrik')
+        return [players, players1, players2]
 ## create PlayerRepository Class
 
 ## No need for __init__ function
