@@ -20,4 +20,4 @@ class ScoreCard:
 
     def __str__(self):
         playerString = map(lambda player: player.__str__(), self.players)
-        return "players:[" + ",".join(playerString) + "]\ncourse:" + self.course.__str__() + "\nactiveCourse:" + str(self.active_course)
+        return "players:[" + ", ".join(playerString) + "]\nCourse: " + self.course.__str__() + "\nactiveCourse: " + str(self.active_course)

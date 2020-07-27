@@ -3,4 +3,4 @@ class Player:
         self.name = name
 
     def __str__(self):
-        return 'name:' + self.name
+        return 'name: ' + self.name
