@@ -10,3 +10,4 @@ class Course:
 
     def total_tracks(self):
         return len(self.par)
+

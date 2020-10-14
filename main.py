@@ -12,7 +12,7 @@ for player in players:
 for course in courses:
     print(course)
 
-active_card = ScoreCard(players, courses[0])
+active_card = ScoreCard(players, courses[1])
 
 print("\n")
 print(active_card,"\n")
@@ -23,3 +23,4 @@ print(active_card,"\n")
 
 active_card.previousTurn()
 print(active_card,"\n")
+
